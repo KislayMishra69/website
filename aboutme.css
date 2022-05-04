@@ -1,0 +1,105 @@
+*{
+    margin: 0;
+    font-family: sans-serif;
+    padding: 0;
+}
+.banner{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0), rgba(0,0,0,0.75)),url(touka.png);
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 100%;
+    margin: auto;
+    padding: 0px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: rgb(27, 27, 29, 0.4);
+
+}
+.logo{
+    cursor: pointer
+}
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 0 20px;
+    position: relative;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+}
+.navbar ul li::after{
+    content: '';
+    height: 3px;
+    width: 0;
+    background: rgb(88, 201, 182);
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: 0.5s;
+}
+.navbar ul li:hover::after{
+    width: 100%;
+}
+.content{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    margin-top: 6%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: whitesmoke;
+}
+.heading{
+    font-size: 150%;
+}
+.abt {
+    margin-block-start: 1rem;
+    padding-inline-start: 0;
+    margin-inline-end: 3rem;
+    margin-inline-start: 3rem;
+}
+
+.abt li {
+    list-style: none;
+    font-size: 1rem;
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin: 1rem;
+    background-color: rgb(49, 49, 53);
+    opacity: 100%;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 9px 2px rgba(35, 112, 228, 0.56)
+}
+.learning h1{
+    margin-top: 5%;
+}
+.learning {
+    margin-block-start: 1rem;
+    padding-inline-start: 0;
+    margin-inline-end: 3rem;
+    margin-inline-start: 3rem;
+}
+
+.learning li {
+    list-style: none;
+    font-size: 1rem;
+    color: #ffff;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    margin: 1rem;
+    background-color: rgb(45, 45, 49);
+    opacity: 100%;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+    box-shadow: 0px 0px 9px 2px rgba(35, 112, 228, 0.56)
+}
